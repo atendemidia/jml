@@ -93,7 +93,7 @@ hr {
     z-index: 9999;
     display: block;
     position: fixed;
-    background: #54a50f;
+    background: #600808;
     text-decoration: none;
     -moz-border-radius: 35px;
     -webkit-border-radius: 35px;
@@ -120,7 +120,7 @@ hr {
 }
 
 #return-to-top:hover {
-    background: #54a50f;
+    background: #600808;
 }
 
 #return-to-top:hover i {
@@ -253,7 +253,7 @@ header .social-icons i:hover {
     font-size: 28px;
     margin-left: 28px;
     float: right;
-    color: #ffffff;
+    color: #600808;
 }
 
 .sidenav {
@@ -301,7 +301,7 @@ header .social-icons i:hover {
 }
 
 nav p {
-    color: rgba(255, 255, 255, 0.71);
+    color: #600808;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 4px;
@@ -309,7 +309,7 @@ nav p {
 }
 
 nav span {
-    color: rgb(255, 255, 255);
+    color: #600808;
     display: block;
     font-weight: 600;
     text-transform: uppercase;
@@ -447,10 +447,7 @@ header .border-img {
     left: 0;
     height: 100%;
     width: 100%;
-    background: -moz-linear-gradient(left, rgba(255, 0, 0, 0.3) 0%, rgba(255, 240, 0, 0.3) 100%);
-    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.3) 0%, rgba(255, 240, 0, 0.3) 100%);
-    background: linear-gradient(to right, rgba(255, 0, 0, 0.3) 0%, rgba(255, 240, 0, 0.3) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dff0000', endColorstr='#4dfff000', GradientType=1);
+    
 }
 
 .banner-home:after {
@@ -525,7 +522,7 @@ header .border-img {
 
 .about .heading {
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 .about .heading h2 {
@@ -544,7 +541,7 @@ header .border-img {
     height: 80px
 }
 
-.circle {
+.circle{
     position: relative;
     display: block;
     background-color: transparent;
@@ -555,7 +552,43 @@ header .border-img {
     font-family: 'Old Standard TT', serif;
 }
 
-.about .circle .gradient {
+.circleBG2{
+    position: relative;
+    display: block;
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 50%;
+    font-family: 'Old Standard TT', serif;
+}
+
+.circleBG3{
+    position: relative;
+    display: block;
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 50%;
+    font-family: 'Old Standard TT', serif;
+}
+
+
+.about .circle .gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: -moz-linear-gradient(left, rgba(173, 136, 55, 0.7) 0%, rgba(167, 129, 86, 0.7) 100%);
+    background: -webkit-linear-gradient(left, rgba(173, 136, 55, 0.7) 0%, rgba(167, 129, 86, 0.7) 100%);
+    background: linear-gradient(to right, rgba(173, 136, 55, 0.7) 0%, rgba(167, 129, 86, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b33c289f', endColorstr='#b30b5eed', GradientType=1);
+}
+
+.about .circleBG2 .gradient{
     position: absolute;
     top: 0;
     left: 0;
@@ -569,6 +602,19 @@ header .border-img {
 }
 
 
+.about .circleBG3 .gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: -moz-linear-gradient(left, rgba(173, 136, 55, 0.7) 0%, rgba(167, 129, 86, 0.7) 100%);
+    background: -webkit-linear-gradient(left, rgba(173, 136, 55, 0.7) 0%, rgba(167, 129, 86, 0.7) 100%);
+    background: linear-gradient(to right, rgba(173, 136, 55, 0.7) 0%, rgba(167, 129, 86, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b33c289f', endColorstr='#b30b5eed', GradientType=1);
+}
+
 .circle:after {
     display: block;
     padding-bottom: 100%;
@@ -577,7 +623,34 @@ header .border-img {
     border-radius: 50%;
     background-color: #ddd;
     content: "";
-    background-image: url("../images/about-1.jpg");
+	background-image: url("../images/about-1.jpg");
+    
+}
+
+
+.circleBG2:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #ddd;
+    content: "";
+	background-image: url("../images/about-2.jpg");
+    
+}
+
+
+.circleBG3:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #ddd;
+    content: "";
+	background-image: url("../images/about-3.jpg");
+    
 }
 
 .circle__inner {
@@ -606,8 +679,9 @@ header .border-img {
 }
 
 .about .circle__content h4 {
-    font-size: 34px;
+    font-size: 32px;
     padding-bottom: 15px;
+	margin-top:24px;
 }
 
 .about .circle__content h4 a {
@@ -1024,7 +1098,7 @@ header .border-img {
     font-weight: 600;
     border-radius: 100px;
     text-transform: uppercase;
-    background-color: transparent;
+    background-color: #;
     color: #cccccc;
     border: 2px solid #b6b6b7;
     font-family: 'Montserrat', sans-serif;
